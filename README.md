@@ -103,4 +103,13 @@ root.mainloop()
 
 #### Interface Outlook
 
-![image](https://user-images.githubusercontent.com/77758884/156816086-9b11ef1a-f4f9-48e6-b14a-eea1dae04549.png)
+<img height="400" width="400" src="https://user-images.githubusercontent.com/77758884/156816086-9b11ef1a-f4f9-48e6-b14a-eea1dae04549.png">
+
+#### Use Instructions
+- Copy link from instagram
+- Paste into "*Enter Link Adress Section*"
+- Then "*Click to Download*"
+-
+#### Extra Resources
+- Project builds on key Python concepts from data structures, control structures and reliance on 3rd party modules/libraries
+- You can explore more online at [Python 101: Ultimate Python Guide](https://medium.com/@dannyvotez/python-101-ultimate-python-guide-72f1850c9f01) and other online resources
