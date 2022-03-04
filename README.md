@@ -2,6 +2,8 @@
 - The aim is using Python for creating an application that downloads images and videos from Instagram
 
 #### Python Script
+### Import key packages/libraries
+
 ```py
 from cgitb import text
 from email import message
@@ -17,15 +19,18 @@ import time
 
 from click import command
 
+```
 #  Creating the function for Download Button
 
+```py
 def download_function(link):
        try:
               if link:
-                     SESSIONID = "69114%3AzFioyrpgP%3A15"   # Enter your session id here, this is an example
+                     SESSIONID = "69114%3AzFioyrpgP%3A15"  # Enter session below, this is an example
                      headers = {
-                            "User-Agent" : "Mozilla/5.0 (Windows NT 10.0; win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.75"
-                                           "Safari/537.36 Edge/79.0.309.43",
+                            "User-Agent" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64)\
+                                   AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.74 \
+                                   Safari/537.36 Edg/79.0.309.43",
                             "cookie" : f'sessionId = {SESSIONID}'
                      }
                      google_reel = Reel(link)
@@ -38,9 +43,9 @@ def download_function(link):
               messagebox.showinfo("Error!!!!", "Something went wrong. Please Try Again Later.")
               print(e)
 
-
+```
 # Creating the User Interface
-
+```py
 root = Tk()
 root.title("Instagram Reel Downloader App")
 root.minsize(680, 500)
@@ -56,7 +61,10 @@ canvas.pack()
 frame = Frame(root, bg="white")
 frame.place(relwidth=1, relheight=1)
 
-background_image = ImageTk.PhotoImage(Image.open(r"E:\Lux Academy\ProfilePicDownloader\DownloadOne\oneimage.jpg"))   # Image path will be given here
+
+# Background image with folder to image link
+
+background_image = ImageTk.PhotoImage(Image.open(r"E:\images\backimage.jpg"))   # Image path will be given here
 background_label = Label(frame, image = background_image)
 background_label.place(relx=-0.35, relwidth=0.7, relheight=1)
 
@@ -72,8 +80,9 @@ entry.place(relx=0.48, rely=0.35, relwidth=0.4, relheight=0.05)
 
 # Function to enable dowload will be in the button below
 
-button1 = Button(root, text = "Click to Download", font = FONT, bg="pink", fg="black", activeforeground="pink",  activebackground="black", justify="center",
- command=lambda:download_function(entry.get()))
+button1 = Button(root, text = "Click to Download", font = FONT, bg="pink", fg="black",
+ activeforeground="pink",  activebackground="black", justify="center",
+  command=lambda:download_function(entry.get()))
 
 button1.place(relx=0.48, rely=0.45, relwidth=0.2, relheight=0.08)
 
