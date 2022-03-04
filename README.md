@@ -20,7 +20,7 @@ import time
 from click import command
 
 ```
-#  Creating the function for Download Button
+### Creating the function for Download Button
 
 ```py
 def download_function(link):
@@ -44,7 +44,7 @@ def download_function(link):
               print(e)
 
 ```
-# Creating the User Interface
+### Creating the User Interface
 ```py
 root = Tk()
 root.title("Instagram Reel Downloader App")
@@ -101,15 +101,14 @@ label2.place(relx=0.48, rely=0.7, relheight=0.1)
 root.mainloop()
 ```
 
-#### Interface Outlook
+#### Graphical User Interface Outlook
 
 <img height="400" width="400" src="https://user-images.githubusercontent.com/77758884/156816086-9b11ef1a-f4f9-48e6-b14a-eea1dae04549.png">
 
 #### Use Instructions
 - Copy link from instagram
 - Paste into "*Enter Link Adress Section*"
-- Then "*Click to Download*"
--
+- Then "*Click to Download*"-
 #### Extra Resources
 - Project builds on key Python concepts from data structures, control structures and reliance on 3rd party modules/libraries
 - You can explore more online at [Python 101: Ultimate Python Guide](https://medium.com/@dannyvotez/python-101-ultimate-python-guide-72f1850c9f01) and other online resources
